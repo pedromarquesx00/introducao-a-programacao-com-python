@@ -40,3 +40,20 @@ valor_desc = merc * (desc / 100)
 merc_novo = merc - valor_desc
 
 print(f"O valor do desconto: {round(valor_desc, 2)}%. Novo preço: {merc_novo}")
+
+# %% Exercicio 3.12
+dist = float(input("Digite a distância: "))
+veloci = float(input("Digite a velocidade média: "))
+
+tempo = dist / veloci
+
+print(f"O tempo da viajem é de: {round(tempo)} horas")
+
+# %% Exercicio 3.13
+celsius = int(input("Entre com o valor em Celsius: "))
+
+f = ((9 * celsius) / 5) + 32
+
+print(f"A temperatura {celsius} em Fahrenheit é: {f}")
+
+# %% 
