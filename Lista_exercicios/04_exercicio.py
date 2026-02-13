@@ -12,4 +12,4 @@ mili = m * 1000
 
 print(f"O valor em milimetros é: {mili}")
 
-# %% Exercicio 3.9s
+# %% Exercicio 3.9
