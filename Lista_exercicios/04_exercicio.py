@@ -13,3 +13,11 @@ mili = m * 1000
 print(f"O valor em milimetros é: {mili}")
 
 # %% Exercicio 3.9
+dia = int(input("digite o número de dias: "))
+horas = int(input("digite as horas"))
+min = int(input("digite os minutos: "))
+seg = int(input("digite os segundos: "))
+
+total_seg = (dia * 24 * 3600) + (horas * 3600) + (min * 60) + seg
+
+print(f"O total de segundos é: {total_seg}")
