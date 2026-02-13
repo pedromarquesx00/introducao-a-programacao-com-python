@@ -21,3 +21,22 @@ seg = int(input("digite os segundos: "))
 total_seg = (dia * 24 * 3600) + (horas * 3600) + (min * 60) + seg
 
 print(f"O total de segundos é: {total_seg}")
+
+# %% Exercicio 3.10
+salario = float(input("Entre com o salário: "))
+aumento = int(input("Entre com a procentagem de aumento: "))
+
+valor_aumento = salario * (aumento / 100)
+
+salario_novo = salario + valor_aumento
+print(f"Com o aumento de {aumento}%, o salário foi de {salario} para novo {salario_novo}")
+
+# %% Exercicio 3.11
+merc = float(input("Digite o preço da mercadoria: "))
+desc = int(input("Digite o valor do desconto: "))
+
+valor_desc = merc * (desc / 100)
+
+merc_novo = merc - valor_desc
+
+print(f"O valor do desconto: {round(valor_desc, 2)}%. Novo preço: {merc_novo}")
