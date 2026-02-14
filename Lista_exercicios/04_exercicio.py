@@ -56,4 +56,14 @@ f = ((9 * celsius) / 5) + 32
 
 print(f"A temperatura {celsius} em Fahrenheit é: {f}")
 
-# %% 
+# %% Exercicio 3.14
+# 60 reais por dia
+# 0.15 reais por km
+
+kmrodado = float(input("Entre a quantidade de quilometro rodado: "))
+dia = int(input("Entre com a quantidade de dias: "))
+
+preco = (dia * 60) + (kmrodado * 0.15)
+
+print(f"O preço do aluguel do carro é: {preco}")
+
