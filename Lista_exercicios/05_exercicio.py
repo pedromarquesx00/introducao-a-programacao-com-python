@@ -17,3 +17,18 @@ elif b > a and b > c:
     print(f"Maior número: {b}")
 else:
     print(f"Maior número: {c}")
+
+# %% Excercicio 4.4
+# salárioacima de 1250 aumento de 10%
+# inferiores ou iguais, acumento de 15%
+
+salario = float(input("Entre com seu salário: "))
+
+if salario > 1250:
+    aumento = salario * 0.10
+    salario2 = aumento + salario
+    print(f"Com aumento de 10%, seu salário de {salario}, foi para {salario2}")
+elif salario <= 1250:
+    aumento = salario * 0.15
+    salario2 = aumento + salario
+    print(f"Com aumento de 15%, seu salário de {salario}, foi para {salario2}")
