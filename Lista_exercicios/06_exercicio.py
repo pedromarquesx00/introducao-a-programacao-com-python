@@ -23,3 +23,19 @@ while x > 0:
     print(x)
     x -= 1
 print("FOGO")
+
+# %% Exercicio 5.4
+fim = int(input("Digite o último número a imprimir: "))
+
+x = 1
+while x <= fim:
+   print(x)
+   x += 2
+
+# %% Exercidio 5.5
+fim = int(input("Digite o último número a imprimir: "))
+
+x = 0
+while x <= fim:
+   print(x)
+   x += 3
