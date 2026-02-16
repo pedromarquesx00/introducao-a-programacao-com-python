@@ -102,4 +102,33 @@ if prestacao > base:
 else:
     print("Emprestimo aprovado")
 
-# %% 
+# %% Exercicio 4.10
+kwh = float(input("Entre com a quantidade de kWh consumido: "))
+tipo = input("Entre com o tipo de intalação: ",
+             "R para residências;",
+             "I para industrias",
+             "C para comércio.")
+
+if tipo == "R":
+    if kwh <= 500:
+        preco = kwh * 0.40
+        print(f"Preço a ser pago: R$ {preco}")
+    else:
+        preco = kwh * 0.65
+        print(f"Preço a ser pago: R$ {preco}")
+elif tipo == "C":
+    if kwh <= 1000:
+        preco = kwh * 0.55
+        print(f"Preço a ser pago: R$ {preco}")
+    else:
+        preco = kwh * 0.60
+        print(f"Preço a ser pago: R$ {preco}")
+elif tipo == "I":
+    if kwh <= 5000:
+        preco = kwh * 0.55
+        print(f"Preço a ser pago: R$ {preco}")
+    else:
+        preco = kwh * 0.60
+        print(f"Preço a ser pago: R$ {preco}")
+else:
+    print("Entre com o tipo válido.")
