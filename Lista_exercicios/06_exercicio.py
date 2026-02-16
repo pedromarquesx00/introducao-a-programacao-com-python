@@ -13,9 +13,13 @@ while x <= 100:
     x += 1
 
 # %% Exercicio 5.3
+# Import time para ficar legal
+
+import time as t
 x = 10
 
 while x > 0:
+    t.sleep(1)
     print(x)
     x -= 1
-print("fogo")
+print("FOGO")
