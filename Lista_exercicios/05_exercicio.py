@@ -72,4 +72,34 @@ else:
                 
 print(f"O preço do produto é: R${preco}")
 
+# %% Exercicio 4.8
+a = float(input("Digite um número: "))
+b = float(input("Digite outro número: "))
+operacao = input("Entre com a operação: soma (+), subtração (-), multiplicação (*), divisão (/)")
+
+if operacao == "+":
+    print(f"Soma: {a + b}")
+elif operacao == "-":
+    print(f"Subtração: {a - b}")
+elif operacao == "*":
+    print(f"Multlicação: {a * b}")
+elif operacao == "/":
+    print(f"Divisão: {a / b}")
+else:
+    print("Operação inválida. Entre com o símbolo correto!")
+
+# %% Exercicio 4.9
+valor_casa = float(input("Entre com o valor da casa: "))
+salario = float(input("Entre com seu salário: "))
+meses = int(input("Entre com o número de meses a serem pagos: "))
+
+prestacao = valor_casa / meses
+
+base = salario * 0.30
+
+if prestacao > base:
+    print("Emprestimo recusado")
+else:
+    print("Emprestimo aprovado")
+
 # %% 
