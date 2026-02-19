@@ -39,3 +39,30 @@ x = 0
 while x <= fim:
    print(x)
    x += 3
+
+# %% Exercicio 5.6
+
+n = int(input("Tabuada de: "))
+
+x = 1
+
+while x <= 10:
+    print(f"{n} x {x} = {n * x}")
+    x = x + 1
+
+# %% Exercicio 5.7
+
+n = int(input("Tabuada de: "))
+inicio = int(input("Digite o valor inicial: "))
+fim = int(input("Digite o valor final: "))
+
+x = inicio
+
+while x <= fim:
+    print(f"{n} x {x} = {n * x}")
+    x = x + 1
+
+# %% Exercicio 5.8
+a = int(input("Entre com o primeiro número: "))
+b = int(input("Entre com o segundo número: "))
+
