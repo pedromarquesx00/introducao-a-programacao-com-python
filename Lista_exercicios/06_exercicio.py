@@ -110,4 +110,24 @@ while questao <= 3:
     questao += 1
 print(f"O aluno fez {pontos} ponto(s)")
 
-# %%
+# %% Exercicio 5.11
+
+dep_inicial = float(input("Entre com o valor do deposito inicial: "))
+juros = int(input("Entre com a taxa de juros: "))
+
+meses = 1
+saldo = dep_inicial
+total_juros = 0
+
+while meses <= 24:
+    juros_mes = saldo * (juros / 100)
+    saldo = saldo + juros_mes
+    total_juros = total_juros + juros_mes
+
+    print(f"Mês: {meses}: {round(saldo,2)}")
+    meses += 1
+
+print(f"\nSaldo final: R${round(saldo,2)}")
+print(f"Total de juros ganhos: R${round(total_juros,2)}")
+
+# %% 
