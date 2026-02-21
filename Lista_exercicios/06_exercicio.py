@@ -131,3 +131,66 @@ print(f"\nSaldo final: R${round(saldo,2)}")
 print(f"Total de juros ganhos: R${round(total_juros,2)}")
 
 # %% 
+
+dep_inicial = float(input("Entre com o valor do deposito inicial: "))
+dep_mensal = float(input("Entre com o deposito mensal: "))
+juros = int(input("Entre com a taxa de juros: "))
+
+meses = 1
+saldo = dep_inicial
+total_juros = 0
+total_depositado = dep_inicial
+
+while meses <= 24:
+    juros_mes = saldo * (juros / 100)
+    saldo = saldo + juros_mes
+    total_juros = total_juros + juros_mes
+
+    print(f"Mês: {meses}: {round(saldo,2)}")
+
+    if meses < 24:
+        saldo += dep_mensal
+        total_depositado += dep_mensal
+    
+    meses += 1
+
+
+print(f"\nTotal depositado: {round(total_depositado,2)}")
+print(f"Saldo final: R${round(saldo,2)}")
+print(f"Total de juros ganhos: R${round(total_juros,2)}")
+
+# %% Exercicio 5.13
+valor_inicial = float(input("Entre com o valor inicial da dívida: "))
+juros_mes = int(input("Entre com a taxa de juros: "))
+pago_mensal = float(input("Entre com o valor que será pago mensalmente: "))
+
+if pago_mensal <= valor_inicial * (juros_mes / 100):
+    print("ATENÇÃO: Valor pago mensalmente não cobre nem os juros!")
+else:
+    meses = 0
+    divida = valor_inicial
+    total_pago = 0
+    total_juros = 0
+
+    while divida > 0:
+        juros = divida * (juros_mes / 100)
+        if pago_mensal >= divida + juros:
+            pagamento = divida + juros
+            total_pago = total_pago + pagamento
+            total_juros = total_juros + juros_mes 
+            meses = meses + 1
+        
+            print(f"Mês: {meses}",
+                  f"\nPagamento final de: R$ {round(pagamento,2)}. Quitou a divida")
+            divida = 0
+
+        else:
+            divida = divida + juros - pago_mensal
+            total_pago = total_pago + pago_mensal
+            total_juros = total_juros + juros
+            meses = meses + 1
+            print(f"Mês {meses}: Dívida atual: R$ {divida:.2f}")
+            
+    print(f"Divida quitada em {meses} meses")
+    print(f"Total pago: R$ {round(total_pago,2)}")
+    print(f"Total de juro pagos: R$ {round(total_juros,2)}")
