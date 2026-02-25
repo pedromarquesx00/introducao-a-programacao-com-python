@@ -26,4 +26,20 @@ while True:
         break
     print("Você escolheu o número: %d" % (numero[escolhido-1]))
 
+# %% Exercicio 6.2
+# feito com lista pré-definida
+
+l = [1,2,3]
+v = [4,5,6]
+j = l + v
+
+j
+
+# %% Exercicio 6.3
+l = [1, 2, 3, 4, 5, 3, 2]
+k = [1, 5, 6, 7, 8, 8, 9]
+
+j = list(set(k + l))
+j
+
 # %%
