@@ -194,3 +194,79 @@ else:
     print(f"Divida quitada em {meses} meses")
     print(f"Total pago: R$ {round(total_pago,2)}")
     print(f"Total de juro pagos: R$ {round(total_juros,2)}")
+
+# %% Exercicio 5.14
+soma = 0
+quantidade = 0
+
+while True:
+    num = int(input("Entre com o número: "))
+    if num != 0:
+        soma += num
+        quantidade += 1
+    else:
+        break
+
+if quantidade > 1:
+    media = soma / quantidade
+    print(f"Quantidade: {quantidade}")
+    print(f"Soma: {soma}")
+    print(f"Média: {round(media,2)}")
+else:
+    print("Nenhum número digitado")
+
+# %% Exercicio 5.15
+# Depois deixarei esse código mais bonito
+total = 0
+
+while True:
+    codigo = int(input('Entre com o código do produto: '))
+    if codigo == 0:
+        break
+
+    if codigo == 1:
+        preco = 0.50
+    elif codigo == 2:
+        preco = 1.00
+    elif codigo == 3:
+        preco = 4.00
+    elif codigo == 5:
+        preco = 7.00
+    elif codigo == 9:
+        preco = 8.00
+    else:
+        print("Código inválido!")
+        continue
+
+quantidade = int(input(f"Quantidade do produto {codigo}: "))
+subtotal = preco * quantidade
+total += subtotal
+    
+print(f"Subtotal: R$ {subtotal}")
+print(f"Total comprado: {total}")
+
+# %% Exercicio 5.16
+valor = int(input("Digite o valor a pagar: "))
+cedulas = 0
+atual = 50
+apagar = valor
+
+while True:
+    if atual <= apagar:
+        apagar -= atual
+        cedulas += 1
+    else:
+        print(f"{cedulas} Cédulas de R$ {atual}")
+        if apagar == 0:
+            break
+
+        if atual == 50:
+            atual = 20
+        elif atual == 20:
+            atual = 10
+        elif atual == 10:
+            atual = 5
+        elif atual == 5:
+            atual = 1
+        cedulas = 0
+# %%
