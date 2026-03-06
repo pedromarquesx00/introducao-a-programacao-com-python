@@ -70,3 +70,23 @@ while True:
     
     else:
         print("Operação inválida. Digite apenas F, A ou S!")
+
+# %% Exercicio 6.12
+l = [5,7,2,4]
+minimo = l[0]
+
+for e in l:
+    if e < minimo:
+        minimo = e
+
+print(minimo)
+
+# %% Exercicio 6.13
+import numpy as np
+t = [-10,-8,0,1,2,5,-2,-4]
+
+np.min(t)
+np.mean(t)
+np.max(t)
+
+# %%
